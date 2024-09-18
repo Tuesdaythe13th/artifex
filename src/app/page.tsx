@@ -32,7 +32,7 @@ export default function Component() {
             <p className="mt-4 text-muted-foreground">
               Learn more about our mission, values, and the team behind Artifex.
             </p>
-            <Link href="#" className="mt-4 inline-flex items-center gap-2 text-primary" prefetch={false}>
+            <Link href="/aboutus" className="mt-4 inline-flex items-center gap-2 text-primary" prefetch={false}>
               <span>Read More</span>
               <ArrowRightIcon className="h-5 w-5" />
             </Link>

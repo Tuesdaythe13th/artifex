@@ -49,8 +49,8 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        body: ['"Inter"', 'sans-serif'],  // Define 'font-body' as Inter
-        heading: ['"Roboto"', 'serif'],  // Define 'font-heading' as Roboto
+        body: ['"DM_Sans"', 'sans-serif'],  // Define 'font-body' as Inter
+        heading: ['"Rowdies"', 'sans-serif'],  // Define 'font-heading' as Roboto
       },
       keyframes: {
         "accordion-down": {

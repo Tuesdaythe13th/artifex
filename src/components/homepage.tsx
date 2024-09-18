@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 export default function Component() {
@@ -13,11 +14,10 @@ export default function Component() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-2 text-center">
-          {/* Add logo above the text */}
           <img
-            src="/artifexlogo3.png"  // Path to your logo
+            src="/artifexlogo3.png"
             alt="Artifex Logo"
-            className="w-auto h-41 mb-1"  // Adjust width/height as needed and add margin
+            className="w-auto h-41 mb-1"
           />
         
           <p className="mt-1 max-w-4xl text-xl text-muted-foreground md:text-4xl">
@@ -32,7 +32,8 @@ export default function Component() {
             <p className="mt-4 text-muted-foreground">
               Learn more about our mission, values, and the team behind Artifex.
             </p>
-            <Link href="#" className="mt-4 inline-flex items-center gap-2 text-primary" prefetch={false}>
+            {/* Update the href to point to the correct path */}
+            <Link href="/aboutus" className="mt-4 inline-flex items-center gap-2 text-primary" prefetch={false}>
               <span>Read More</span>
               <ArrowRightIcon className="h-5 w-5" />
             </Link>
