@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import Image from "next/image";
 
 export default function Component() {
   return (
