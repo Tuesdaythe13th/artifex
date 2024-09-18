@@ -1,27 +1,49 @@
 "use client";
 import Link from "next/link";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"; 
+import React from "react";
 
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <section className="relative flex items-center justify-center h-[100dvh] bg-[url('/hero-bg.jpg')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black/70 z-0" />
-        <div className="relative z-10 text-center text-white space-y-6">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+      {/* Header Section with Background Image and Gradient */}
+      <header className="w-full relative">
+        {/* Background Image */}
+        <img
+          src="/xpage3.jpg" // Replace with your correct image path
+          width={1920}
+          height={1080}
+          className="w-full h-[90vh] object-cover object-center"
+          style={{ aspectRatio: "1920/1080", objectFit: "cover" }}
+        />
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
+
+        {/* Centered Content */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-2">
+          {/* Header Image */}
+          
+          
+
+          {/* Main Heading */}
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
             Innovating at the intersection of art, code, and social impact
           </h1>
+
+          {/* Call to Action Button */}
           <Link
             href="#"
-            className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-md hover:bg-primary/90 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            className="inline-flex items-center justify-center px-6 py-3 mt-4 bg-primary text-primary-foreground font-medium rounded-md hover:bg-primary/90 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             prefetch={false}
           >
             Join Us
             <ArrowRightIcon className="ml-2 h-5 w-5" />
           </Link>
         </div>
-      </section>
-      <section className="py-20 bg-background">
+      </header>
+
+      <section className="py-10 bg-background">
         <div className="container mx-auto px-4 md:px-6 max-w-3xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Mission</h2>
           <p className="text-muted-foreground text-lg">
@@ -29,34 +51,53 @@ export default function Component() {
           </p>
         </div>
       </section>
-      <section className="py-20 bg-muted">
+
+      <section className="py-10 bg-background">
+        <div className="container mx-auto px-4 md:px-6 max-w-3xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Commitment to Diversity & Empowerment</h2>
+          <p className="text-muted-foreground text-lg">
+            Founded by a Latina of Indigenous heritage, ARTIFEX is a BIPOC, neurodiverse, LGBTQ, and female-led company. Diversity is the core of our identity, driving our passion for empowering underrepresented communities and those who face barriers to entry in the arts, entertainment, and technology. We believe that digital equity is power, and we strive to make it accessible to all.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-20 bg-cover bg-center" style={{ backgroundImage: `url('/setapart.jpg')` }}>
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">What Sets Us Apart</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <MicroscopeIcon className="h-12 w-12 mb-4 text-primary" />
-              <h3 className="text-xl font-bold mb-2">Research</h3>
-              <p className="text-muted-foreground">
-                Our team of researchers and scientists are at the forefront of emerging technologies, constantly exploring new frontiers to push the boundaries of what&apos;s possible.
-              </p>
-            </div>
-            <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <BriefcaseIcon className="h-12 w-12 mb-4 text-primary" />
-              <h3 className="text-xl font-bold mb-2">Strategy</h3>
-              <p className="text-muted-foreground">
-                We work closely with our clients to develop tailored strategies that leverage the power of technology, design, and creative thinking to achieve their goals.
-              </p>
-            </div>
-            <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <HeartIcon className="h-12 w-12 mb-4 text-primary" />
-              <h3 className="text-xl font-bold mb-2">Social Impact</h3>
-              <p className="text-muted-foreground">
-                Driving positive social change is at the heart of everything we do. We&apos;re committed to using our expertise to create solutions that make a real difference in the world.
-              </p>
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">What Sets Us Apart</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex justify-center">
+                  <MicroscopeIcon className="h-12 w-12 mb-4 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-white">Research</h3>
+                <p className="text-muted-foreground text-white">
+                  Our team of researchers, domain experts, and data scientists are at the forefront of emerging technologies, constantly exploring new frontiers to push the boundaries of what's possible.
+                </p>
+              </div>
+              <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex justify-center">
+                  <BriefcaseIcon className="h-12 w-12 mb-4 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-white">Strategy as a Service</h3>
+                <p className="text-muted-foreground text-white">
+                  We work closely with our clients to develop tailored strategies that leverage the power of technology, design, and creative thinking to achieve their goals.
+                </p>
+              </div>
+              <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex justify-center">
+                  <HeartIcon className="h-12 w-12 mb-4 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-white">Social Impact</h3>
+                <p className="text-muted-foreground text-white">
+                  Driving positive social change is at the heart of everything we do. We're committed to using our expertise to create solutions that make a real difference in the world.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Leadership</h2>
@@ -64,17 +105,17 @@ export default function Component() {
             <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <Avatar className="w-20 h-20 mb-4">
                 <AvatarImage src="/placeholder-user.jpg" alt="Avatar" />
-                <AvatarFallback>JD</AvatarFallback>
+                <AvatarFallback>T</AvatarFallback>
               </Avatar>
-              <h3 className="text-xl font-bold mb-2">John Doe</h3>
-              <p className="text-muted-foreground mb-4">Co-Founder, CEO</p>
+              <h3 className="text-xl font-bold mb-2">TUESDAY</h3>
+              <p className="text-muted-foreground mb-4">Founder, Director of Research, Cloud Architect</p>
               <div className="flex items-center space-x-2">
                 <BriefcaseIcon className="h-5 w-5 text-muted-foreground" />
-                <span className="text-muted-foreground">Stanford University, MIT</span>
+                <span className="text-muted-foreground">George Washington University, Google Jumpstart Cohort</span>
               </div>
               <div className="flex items-center space-x-2 mt-2">
                 <ShieldCheckIcon className="h-5 w-5 text-muted-foreground" />
-                <span className="text-muted-foreground">Responsible AI Practices</span>
+                <span className="text-muted-foreground">Research, Creative Direction, Strategic Partnerships, Responsible AI Practices</span>
               </div>
             </div>
             <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -82,15 +123,15 @@ export default function Component() {
                 <AvatarImage src="/placeholder-user.jpg" alt="Avatar" />
                 <AvatarFallback>JD</AvatarFallback>
               </Avatar>
-              <h3 className="text-xl font-bold mb-2">Jane Doe</h3>
-              <p className="text-muted-foreground mb-4">Co-Founder, CTO</p>
+              <h3 className="text-xl font-bold mb-2">Dr. Julia Reodica</h3>
+              <p className="text-muted-foreground mb-4">Director of Medical Research</p>
               <div className="flex items-center space-x-2">
                 <BriefcaseIcon className="h-5 w-5 text-muted-foreground" />
-                <span className="text-muted-foreground">MIT, Carnegie Mellon</span>
+                <span className="text-muted-foreground">OHSU Masters of Nursing</span>
               </div>
               <div className="flex items-center space-x-2 mt-2">
                 <ShieldCheckIcon className="h-5 w-5 text-muted-foreground" />
-                <span className="text-muted-foreground">Responsible AI Practices</span>
+                <span className="text-muted-foreground">HIPPA Compliance, Medical Domain Expertise</span>
               </div>
             </div>
             <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -98,25 +139,26 @@ export default function Component() {
                 <AvatarImage src="/placeholder-user.jpg" alt="Avatar" />
                 <AvatarFallback>JD</AvatarFallback>
               </Avatar>
-              <h3 className="text-xl font-bold mb-2">Alex Johnson</h3>
-              <p className="text-muted-foreground mb-4">Head of Research</p>
+              <h3 className="text-xl font-bold mb-2">Lena Weisbrot</h3>
+              <p className="text-muted-foreground mb-4">Director of Higher Education R&D</p>
               <div className="flex items-center space-x-2">
                 <BriefcaseIcon className="h-5 w-5 text-muted-foreground" />
-                <span className="text-muted-foreground">Harvard, UC Berkeley</span>
+                <span className="text-muted-foreground">UCLA Arts and Design</span>
               </div>
               <div className="flex items-center space-x-2 mt-2">
                 <ShieldCheckIcon className="h-5 w-5 text-muted-foreground" />
-                <span className="text-muted-foreground">Responsible AI Practices</span>
+                <span className="text-muted-foreground">Video game and narrative design, Educational Domain Expertise</span>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Join the ARTIFEX Team</h2>
           <p className="text-muted-foreground text-lg mb-8">
-            Interested in working with us? We&apos;re always looking for talented individuals who share our passion for innovation and social impact.
+            Interested in partnering with us? We're always looking for talented individuals who share our passion for innovation and social impact.
           </p>
           <Link
             href="#"
@@ -132,7 +174,7 @@ export default function Component() {
   );
 }
 
-
+// ArrowRightIcon component for the button icon
 function ArrowRightIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
