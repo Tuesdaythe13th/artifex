@@ -5,23 +5,23 @@ export default function Component() {
     <div className="bg-background text-foreground">
       <header className="w-full relative">
         <img
-          src="/homepage.jpg"
+          src="/xpage4.jpg"
           width={1920}
           height={1080}
-          className="w-full h-[80vh] object-cover object-center"
+          className="w-full h-[90vh] object-cover object-center"
           style={{ aspectRatio: "1920/1080", objectFit: "cover" }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-2 text-center">
           {/* Add logo above the text */}
           <img
-            src="/artifexlogo.png"  // Path to your logo
+            src="/artifexlogo3.png"  // Path to your logo
             alt="Artifex Logo"
-            className="w-auto h-32 mb-4"  // Adjust width/height as needed and add margin
+            className="w-auto h-41 mb-1"  // Adjust width/height as needed and add margin
           />
         
-          <p className="mt-4 max-w-3xl text-xl text-muted-foreground md:text-2xl">
-            Pioneering the future of artificial intelligence with innovative research and cutting-edge technology.
+          <p className="mt-1 max-w-4xl text-xl text-muted-foreground md:text-4xl">
+            Pioneering the future of design and artificial intelligence with innovative research and cutting-edge technology.
           </p>
         </div>
       </header>
