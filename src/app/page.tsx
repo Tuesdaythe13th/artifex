@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import react from "react";
 
 export default function Component() {
   return (
