@@ -1,35 +1,30 @@
-// This is the root layout component for your Next.js app.
-// Learn more: https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required
-import { Rowdies, DM_Sans } from 'next/font/google';
-import { cn } from '@/lib/utils'
+import { Manrope } from 'next/font/google';
+import { cn } from '@/lib/utils';
 
-
-
-// Import Rowdies for headings
-const fontHeading = Rowdies({
+// Import Google Fonts
+const fontHeading = Manrope({
   subsets: ['latin'],
-  weight: ['300', '400', '700'],  // Define weights for light, regular, and bold
   display: 'swap',
   variable: '--font-heading',
 });
 
-// Import DM Sans for body text
-const fontBody = DM_Sans({
+const fontBody = Manrope({
   subsets: ['latin'],
-  weight: ['300', '400', '700'],  // Define weights for light, regular, and bold
   display: 'swap',
   variable: '--font-body',
 });
 
+// Define children type using ReactNode
+import { ReactNode } from 'react';
 
 interface LayoutProps {
-  children: React.ReactNode
+  children: ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body 
+      <body
         className={cn(
           'antialiased',
           fontHeading.variable,
@@ -39,5 +34,5 @@ export default function Layout({ children }: LayoutProps) {
         {children}
       </body>
     </html>
-  )
+  );
 }
