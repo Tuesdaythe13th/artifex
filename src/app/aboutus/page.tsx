@@ -115,7 +115,7 @@ export default function Component() {
               </div>
               <div className="flex items-center space-x-2 mt-2">
                 <ShieldCheckIcon className="h-5 w-5 text-muted-foreground" />
-                <span className="text-muted-foreground">Research, Creative Direction, Strategic Partnerships, Responsible AI Practices</span>
+                <span className="text-muted-foreground">Research, Creative Direction, Strategic Partnerships</span>
               </div>
             </div>
             <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
