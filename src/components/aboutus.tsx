@@ -15,6 +15,7 @@ export default function Component() {
           height={1080}
           className="w-full h-[90vh] object-cover object-center"
           style={{ aspectRatio: "1920/1080", objectFit: "cover" }}
+          alt="Background Image"
         />
 
         {/* Gradient Overlay */}
@@ -22,10 +23,6 @@ export default function Component() {
 
         {/* Centered Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-2">
-          {/* Header Image */}
-          
-          
-
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
             Innovating at the intersection of art, code, and social impact
@@ -72,7 +69,7 @@ export default function Component() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">Research</h3>
                 <p className="text-muted-foreground text-white">
-                  Our team of researchers, domain experts, and data scientists are at the forefront of emerging technologies, constantly exploring new frontiers to push the boundaries of what's possible.
+                  Our team of researchers, domain experts, and data scientists are at the forefront of emerging technologies, constantly exploring new frontiers to push the boundaries of what&apos;s possible.
                 </p>
               </div>
               <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -90,7 +87,7 @@ export default function Component() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">Social Impact</h3>
                 <p className="text-muted-foreground text-white">
-                  Driving positive social change is at the heart of everything we do. We're committed to using our expertise to create solutions that make a real difference in the world.
+                  Driving positive social change is at the heart of everything we do. We&apos;re committed to using our expertise to create solutions that make a real difference in the world.
                 </p>
               </div>
             </div>
@@ -131,7 +128,7 @@ export default function Component() {
               </div>
               <div className="flex items-center space-x-2 mt-2">
                 <ShieldCheckIcon className="h-5 w-5 text-muted-foreground" />
-                <span className="text-muted-foreground">HIPPA Compliance, Medical Domain Expertise</span>
+                <span className="text-muted-foreground">HIPAA Compliance, Medical Domain Expertise</span>
               </div>
             </div>
             <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -158,7 +155,7 @@ export default function Component() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Join the ARTIFEX Team</h2>
           <p className="text-muted-foreground text-lg mb-8">
-            Interested in partnering with us? We're always looking for talented individuals who share our passion for innovation and social impact.
+            Interested in partnering with us? We&apos;re always looking for talented individuals who share our passion for innovation and social impact.
           </p>
           <Link
             href="#"

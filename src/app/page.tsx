@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Image from 'next/image'; 
+import Image from "next/image"; 
 
 export default function Component() {
   return (
@@ -22,7 +22,6 @@ export default function Component() {
             alt="Artifex Logo"
             className="w-auto h-41 mb-1"  // Adjust width/height as needed and add margin
           />
-        
           <p className="mt-1 max-w-4xl text-xl text-muted-foreground md:text-4xl">
             Pioneering the future of design and artificial intelligence with innovative research and cutting-edge technology.
           </p>
