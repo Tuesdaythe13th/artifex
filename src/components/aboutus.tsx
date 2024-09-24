@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image"; 
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"; 
 import React from "react";
 
@@ -9,13 +10,13 @@ export default function Component() {
       {/* Header Section with Background Image and Gradient */}
       <header className="w-full relative">
         {/* Background Image */}
-        <img
+        <Image
           src="/xpage3.jpg" // Replace with your correct image path
           width={1920}
           height={1080}
+          alt="Background Image"
           className="w-full h-[90vh] object-cover object-center"
           style={{ aspectRatio: "1920/1080", objectFit: "cover" }}
-          alt="Background Image"
         />
 
         {/* Gradient Overlay */}
@@ -69,7 +70,7 @@ export default function Component() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">Research</h3>
                 <p className="text-muted-foreground text-white">
-                  Our team of researchers, domain experts, and data scientists are at the forefront of emerging technologies, constantly exploring new frontiers to push the boundaries of what&apos;s possible.
+                  Our team of researchers, domain experts, and data scientists are at the forefront of emerging technologies, constantly exploring new frontiers to push the boundaries of what is possible.
                 </p>
               </div>
               <div className="bg-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -87,7 +88,7 @@ export default function Component() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">Social Impact</h3>
                 <p className="text-muted-foreground text-white">
-                  Driving positive social change is at the heart of everything we do. We&apos;re committed to using our expertise to create solutions that make a real difference in the world.
+                  Driving positive social change is at the heart of everything we do. We are committed to using our expertise to create solutions that make a real difference in the world.
                 </p>
               </div>
             </div>
@@ -155,7 +156,7 @@ export default function Component() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Join the ARTIFEX Team</h2>
           <p className="text-muted-foreground text-lg mb-8">
-            Interested in partnering with us? We&apos;re always looking for talented individuals who share our passion for innovation and social impact.
+            Interested in partnering with us? We are always looking for talented individuals who share our passion for innovation and social impact.
           </p>
           <Link
             href="#"
